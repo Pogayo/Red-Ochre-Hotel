@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin:0;
+}
+
+.nav-list{
+    list-style-type: none;
+    margin-right:20px;
+}
+.nav-list-item{
+    display:inline;
+    margin-right:20px;
+}
+.nav-list a{
+    text-decoration: none;
+}
+.flex-row{  /*  for flex row blocks..the alignment will be set by the individual block*/
+    display:flex;
+    flex-direction:row;
+}
+.nav-bar{
+    justify-content: flex-end;
+    background-color: #000000;
+    margin:0;
+}
