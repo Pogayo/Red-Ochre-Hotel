@@ -42,6 +42,7 @@ body{
 #top-section{
     height:400px;
     position: relative;
+    background-color: #CF9812;
 }
 .top-image{
     width:100%;
