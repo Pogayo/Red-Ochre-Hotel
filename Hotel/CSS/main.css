@@ -182,3 +182,12 @@ textarea{
     padding:10px;
     padding-bottom:30px
 }
+
+#bedrooms-container{
+    height:900px;
+    padding: 80px;
+    padding-top: 0;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
