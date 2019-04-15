@@ -96,7 +96,16 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height:900px;
+    margin-bottom: 20px;
 
+}
+.other-services-item{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #F6F6F8;
 }
 .grid-image-full{
     width:100%;
@@ -139,7 +148,7 @@ body{
 
 }
 .contact-content-container div{
-    background-color: #daddda;
+    background-color: #F6F6F8;
     min-width: 300px;
 }
 input,textarea{
@@ -196,4 +205,18 @@ textarea{
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     padding: 20px;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.float-input-right{
+    float:right;
+    padding:0;
+    margin:0;
 }
