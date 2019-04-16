@@ -18,7 +18,7 @@
 
         <input type="email" name="email" placeholder="Email" class="log-sign-input"><br/>
 
-        <select class="log-sign-input">
+        <select class="log-sign-input" name="utype">
             <option>You are a Seller</option>
             <option>You are a Buyer</option>
 
