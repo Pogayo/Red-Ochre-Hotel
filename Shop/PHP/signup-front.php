@@ -28,7 +28,7 @@
         <input type="Password" name="pass" placeholder="Password" class="log-sign-input"><br/><br>
 
 
-        <button  type="submit" class="black-button-orange-text log-sign-input"><b>Login</b></button><br>
+        <button  type="submit" class="black-button-orange-text log-sign-input"><b>Sign Up</b></button><br>
     </form>
     </div>
     <div class="width-full"><!--contains already have account to redirect-->
