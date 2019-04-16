@@ -173,3 +173,74 @@ nav{
 .footer-nav-links a:hover{
     font-weight: bold;
 }
+
+/*CSS BY Author Perez*/
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display:flex;
+}
+.flex-row{
+     flex-direction: row;
+ }
+.flex-column{
+    flex-direction: column;
+}
+.flex-row-center-all{
+    justify-content: center;
+    align-items: center;
+}
+.flex-column-center-all{
+    align-items: center;
+    justify-content: center;
+}
+.width-full{
+    width:100%;
+}
+.center-text{
+    text-align: center;
+}
+.orange-button {
+    background-color: #CF9812;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    margin:5px;
+}
+.log-sign-input{ /*Styles the input for the login and the sign-up*/
+    width:300px;
+    border-radius: 10px;
+    background-color: #cfcfcf;
+    height:30px;
+    padding-left:8px;
+    padding-right:8px;
+    border-style: none;
+}
+.black-button-orange-text{
+
+    background-color: black;
+    color:#CF9812;
+}
+.full-width-height-image{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.footer{
+    background-color: black;
+    color:white;
+    height:50px;
+    width:100%;
+    margin-bottom: 0;
+
+}
+.white-text{
+    color:white;
+}
+.no-underline-link{
+    text-decoration: none;
+}
+.padding-left-15{
+    padding-left: 15px;
+}
