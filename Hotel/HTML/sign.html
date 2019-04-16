@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signPage</title>
+    <link href="../CSS/sign.css" type="text/css" rel="stylesheet">
+    <link href="../CSS/main.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav-bar top-nav flex-row"><!-- Contains the navigations bar-->
+    <ul class="nav-list">
+        <li class="nav-list-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="eat.html"><i class="currentPage">Eat</i></a></li>
+        <li class="nav-list-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="meet.html">Meetings</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="">shop</a></li>
+    </ul>
+</nav>
+
+<div class="BACKGROUND">
+<div class="information">
+
+    <h3><center>PLEASE PROVIDE THE INFORMATION BELOW TO BOOK A ROOM</center></h3>
+
+    <form action="action_page.php">
+
+   <label>First name:</label>  <input type="text" name="firstname"><br>
+    <label>Last name:</label>  <input type="text" name="lastname"><br>
+    <label>Email:</label><input type="email" name="email"><br>
+    <label>Phone Number:</label><input type="number" name="number"><br>
+    <label>Nationality:</label><input type="text" name="nationality"><br>
+    <label>Number of people:</label><input type="number" name="number"><br>
+    <label>Room number</label><input type="number" name="number"><br>
+    <input type="submit"
+                      style="margin-left:200px;
+                      border-radius: 4px;
+                      border: 1px solid #ccc;
+                      resize: vertical"
+                      value="Submit">
+
+</form>
+</div>
+
+<!-- Footer section--->
+<div class="nav-bar flex-row">
+    <span class="white-text" style="justify-self: flex-start;margin:20px">&copy Radiant Ochre 2019</span><span style="margin:20px"><a href="#" class="white-text" style="text-decoration: none;">Back to top</a></span>
+</div>
+
+<!--script-->
+<script src="../JS/main.js"></script>
+</div>
+</body>
+</html>
