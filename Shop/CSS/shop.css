@@ -95,7 +95,7 @@ nav{
 }
 
 .header-img-text{
-    color: black;
+    color: white;
     margin: -250px 0 0 20px;
     font-size: 40px;
 }
@@ -109,7 +109,7 @@ nav{
     width: auto;
     height: 600px;
     margin-top: 20px;
-    background:#b5bc9a;
+    background:white;
 }
 .inner-imagebox-left{
     float: left;
