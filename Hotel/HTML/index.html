@@ -13,12 +13,12 @@
             <li class="nav-list-item"><a class="nav-link" href="eat.html">Eat</a></li>
             <li class="nav-list-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
             <li class="nav-list-item"><a class="nav-link" href="meet.html">Meetings</a></li>
-            <li class="nav-list-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-list-item"><a class="nav-link" href="">shop</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="contact.php">Contact</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="../shop/PHP/index.php">shop</a></li>
         </ul>
     </nav>
     <div id="top-section" >
-        <img src="../images/bright-orange-bedroom.jpg" alt="Image of a nice looking bedroom" title="Radiant Ochre bedroom" class="top-image">
+        <img src="../images/bright.jpg" alt="Image of a nice looking bedroom" title="Radiant Ochre bedroom" class="top-image">
         <p class="top-paragraph"><span style="font-size: 40px" class="white-text">RADIANT OCHRE HOTEL</span> <br>The best in the city</p>
 
     </div>
@@ -89,13 +89,13 @@
             <div class="flex-column flex-column-center">
                 <div id="message"></div> <!--Will contain the message if a user submits the form-->
                 <p><strong>Drop us a message here and we will respond as soon as possible.</strong></p>
-                <form style="position: relative">
-                    <div>Name: <input type="text" placeholder="Your name" required class="float-input-right"></div>
-                    <div>Email: <input type="email" placeholder="Your email address" required class="float-input-right"></div>
-                    <div>Tel. Number: <input type="number" placeholder="0 000 000 000" class="float-input-right"></div>
-                   <div > <span style="float:left;margin-top: 15px">Message:</span><textarea placeholder="What do you want to let us know?"></textarea><br/>
-                   </div>
-                    <input type="submit" class="learn-more-button">
+                <form action="message.php" method="POST" style="position: relative">
+                    <input style=" border-style: none; background-color: white; border-radius: 20px; height: 25px;width: 300px; text-align: center;" type="text" placeholder="Your name" name="uname" required><br/>
+                  <input style=" border-style: none; background-color: white; border-radius: 20px;  height: 25px;width: 300px; text-align: center;" type="email" placeholder="Your email address" name="uemail" required><br/>
+                 <input style=" border-style: none; background-color: white; border-radius: 20px;  height: 25px;width: 300px; text-align: center;" type="number" name="uphone" placeholder="phone number"><br/>
+                    <div  style="background-color: inherit"> <span style="float:left;margin-top: 15px; "></span><textarea style=" border-style: none; background-color: white; border-radius: 20px; width: 300px; text-align: center;" placeholder="What do you want to let us know?" name="umessage"></textarea><br/>
+                    </div>
+                    <input style="border-style: none; width: 300px; text-align: center;" type="submit" class="learn-more-button">
                 </form>
 
             </div>

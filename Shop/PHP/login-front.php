@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-<div class="width-full" style="height:350px">
-    <img src="../images/suite-bedroom.jpg" alt="bed" class="full-width-height-image"/>
+    <center>
+<div class="width-full" style="height:350px; width: 1000px;">
+    <a href="index.php"><img style="padding-top: 40px; height: 300px; width: 300px;" src="../images/shop.png" alt="bed" class="full-width-height-image"/></a>
 </div>
+</center>
 <h1 class="center-text">Welcome</h1><br>
 <div  class="width-full"><!--Contains the sign-up form-->
     <form action="login.php" method="post" class="width-full flex flex-column flex-column-center-all">

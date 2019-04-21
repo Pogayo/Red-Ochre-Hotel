@@ -26,13 +26,12 @@ body{
     justify-content: center;
 }
 .nav-bar{
-    padding:400px;
     justify-content: flex-end;
     background-color: #000000;
     margin:0;
 }
 .currentPage{ /* Styles the navigation link for the current page that we are in*/
-     color:#CF9812;
+    color:#CF9812;
 }
 .centered {
     position: absolute;
@@ -220,4 +219,8 @@ input[type=number] {
     float:right;
     padding:0;
     margin:0;
+}
+.informatiom input{
+    border-radius: 20px;
+    border-style: none;
 }

@@ -10,18 +10,18 @@
 <body>
 <nav class="nav-bar top-nav flex-row"><!-- Contains the navigations bar-->
     <ul class="nav-list">
-        <li class="nav-list-item"><a class="nav-link " href="index.html">Home</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="eat.html">Eat</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="meet.html">Meetings</a></li>
+        <li class="nav-list-item"><a class="nav-link " href="index.php">Home</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="eat.php">Eat</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="sleep.php">Sleep</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="meet.php">Meetings</a></li>
         <li class="nav-list-item"><a class="nav-link" href=""><i class="currentPage">Contact</i></a></li>
         <li class="nav-list-item"><a class="nav-link" href="">shop</a></li>
     </ul>
 </nav>
 
 <div id="top-section" style="height: 650px">
-    <img src="../images/bright-orange-bedroom.jpg" alt="Image of a nice looking bedroom" title="Radiant Ochre bedroom" class="top-image">
-    <div id="contact-container" class="flex-column "  style="position:absolute;top:8%;left:5%;background: rgba(255, 255, 255, 0.56);">
+    <img src="../images/bright" alt="Image of a nice looking bedroom" title="Radiant Ochre bedroom" class="top-image">
+    <div id="contact-container" class="flex-column "  style="position:absolute;top:8%;left:5%;background: rgba(31, 30, 30, 0.91);color: white;">
         <h1 class="orange-font-color center-text">CONTACT US</h1>
         <div class="contact-content-container" style="width:100%">
             <div  id="contact-details" style="background-color: inherit">
@@ -35,13 +35,13 @@
             <div class="flex-column flex-column-center" style="background-color: inherit">
                 <div id="message"></div> <!--Will contain the message if a user submits the form-->
                 <p>Drop us a message here and we will respond as soon as possible.</p>
-                <form>
-                    Name: <input type="text" placeholder="Your name" required><br/>
-                    Email: <input type="email" placeholder="Your email address" required><br/>
-                    Tel. Number: <input type="number" placeholder="0 000 000 000"><br/>
-                    <div  style="background-color: inherit"> <span style="float:left;margin-top: 15px">Message:</span><textarea placeholder="What do you want to let us know?"></textarea><br/>
+                <form action="message.php" method="POST">
+                    <input style=" border-style: none; background-color: white; border-radius: 20px; height: 25px;width: 300px; text-align: center;" type="text" placeholder="Your name" name="name" required><br/>
+                  <input style=" border-style: none; background-color: white; border-radius: 20px;  height: 25px;width: 300px; text-align: center;" type="email" placeholder="Your email address" name="email" required><br/>
+                 <input style=" border-style: none; background-color: white; border-radius: 20px;  height: 25px;width: 300px; text-align: center;" type="number" name="phone" placeholder="phone number"><br/>
+                    <div  style="background-color: inherit"> <span style="float:left;margin-top: 15px; "></span><textarea style=" border-style: none; background-color: white; border-radius: 20px; width: 300px; text-align: center;" placeholder="What do you want to let us know?" name="message"></textarea><br/>
                     </div>
-                    <input type="submit" class="learn-more-button">
+                    <input style="border-style: none; width: 300px; text-align: center;" type="submit" class="learn-more-button">
                 </form>
 
 

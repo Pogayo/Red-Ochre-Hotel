@@ -1,25 +1,29 @@
 <?php
-session_start();
-include 'dbconnect.php';
-$email=$_POST['email'];
-$pass=$_POST['pass'];
-
-$sql="SELECT * FROM users WHERE email='$email' AND password='$pass'";
-
-$result=$conn->query($sql);
-
-if(!$row=$result->fetch_assoc()){
-    header("Location:error.php");
-
-}else{
-    //$_SESSION['name']=$_POST['uname'];
-    $sql="SELECT uname FROM users WHERE email='$email' AND password='$pass'";
-
-    $result=$conn->query($sql);
-    $row = mysqli_fetch_array($result);
-    $_SESSION['name']=$row['uname'];
-
-    //$sess  = $_SESSION['name'];
-    //echo $sess;
-    header("Location:home.php");
+$host="localhost";
+$user="root";
+$password="";
+$db="hotel";
+ 
+mysqli_connect($host,$user,$password);
+mysqli_select_db($db,"test");
+ 
+if(isset($_POST['username'])){
+    $email=$_POST['email'];
+    $password=$_POST['pass'];
+    
+    $sql="select * from login where email='".$email."'AND Pass='".$password."' limit 1";
+    
+    $result=mysqli_query($sql);
+    
+    if(mysql_num_rows($result)==1){
+        echo " You Have Successfully Logged in";
+        exit();
+    }
+    else{
+        echo " You Have Entered Incorrect Password";
+        exit();
+    }
+        
 }
+
+?>
